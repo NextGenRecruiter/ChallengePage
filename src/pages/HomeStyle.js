@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: ${px2vw(32)};
+  margin: ${px2vw(100)};
   max-width: 100%;
 
   @media (min-width: 1024px) {
@@ -35,7 +35,11 @@ export const Box = styled.div`
     height: 100%;
   }
 `;
-
+export const BoxImage = styled.img`
+width: 46%;
+float: left;
+margin-right: 10px;
+`;
 export const BoxTitle = styled.h3`
   color: #333;
   font-size: 2rem;

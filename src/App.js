@@ -1,8 +1,10 @@
 import React from "react";
-
 import Global from "./styles/global";
-
 import Home from "./pages/Home";
+import imageOne from "./images/imageOne.png"
+import imageTwo from "./images/imageTwo.png"
+import imageThree from "./images/imageThree.png"
+
 
 
 const Mentorship =
@@ -14,21 +16,21 @@ const advocacy =
   const data = [
   {
     id: Math.random(),
-    image:"",
+    image:<img src={imageOne} alt="A woman and man standing next to table conversating"/>,
     title: "Mentorship",
     text: Mentorship,
     bgColor: "#D5CAFA"
   },
   {
     id: Math.random(),
-    image:"",
+    image:<img src={imageTwo} alt="A woman lecturing"/>,
     title: "Financial Support",
     text: Financial,
     bgColor: "#EDA9A9"
   },
   {
     id: Math.random(),
-    image:"",
+    image:<img src={imageThree} alt="A man on stage giving tech talk"/>,
     title: "Advocacy",
     text: advocacy,
     bgColor: "#F2EE8D"
