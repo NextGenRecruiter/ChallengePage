@@ -36,14 +36,12 @@ export const Box = styled.div`
   }
 `;
 export const BoxImage = styled.img`
-width: 46%;
-float: left;
-margin-right: 10px;
+width: 90%;
 `;
 export const BoxTitle = styled.h3`
   color: #333;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: 1024px) {
     font-size: 1.5rem;

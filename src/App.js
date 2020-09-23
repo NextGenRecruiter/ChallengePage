@@ -16,24 +16,24 @@ const advocacy =
   const data = [
   {
     id: Math.random(),
-    image:<img src={imageOne} alt="A woman and man standing next to table conversating"/>,
+    image:imageOne,
+    imageDesription:"A woman and a man standing near table conversating",
     title: "Mentorship",
     text: Mentorship,
-    bgColor: "#D5CAFA"
   },
   {
     id: Math.random(),
-    image:<img src={imageTwo} alt="A woman lecturing"/>,
+    image:imageTwo,
+    imageDesription:"A woman giving lecture",
     title: "Financial Support",
     text: Financial,
-    bgColor: "#EDA9A9"
   },
   {
     id: Math.random(),
-    image:<img src={imageThree} alt="A man on stage giving tech talk"/>,
+    image:imageThree,
+    imageDesription:"A man on stage giving a tech talk",
     title: "Advocacy",
     text: advocacy,
-    bgColor: "#F2EE8D"
   }
 ];
 

@@ -6,7 +6,7 @@ export default function Home({ boxData }) {
     <Container>
       {boxData.map(box => (
         <Box key={box.id} bgColor={box.bgColor}>
-          <BoxImage>{box.image}</BoxImage>
+          <BoxImage src={box.image} alt={box.description}/>
           <BoxTitle>{box.title}</BoxTitle>
           <BoxText>{box.text}</BoxText>
         </Box>
