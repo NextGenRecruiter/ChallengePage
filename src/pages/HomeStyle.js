@@ -2,7 +2,7 @@ import styled from "styled-components";
 import px2vw from "../utils/px2vw";
 
 export const Head = styled.div`
-margin: 5px; 
+margin: 0.25em; 
 display: flex;
 flex-direction: row-reverse;
 `;
@@ -55,7 +55,7 @@ export const HeaderButton = styled.button`
   border: none;
   border-radius: 25px;
   color: white;
-  padding: 1em 1.5em;
+  padding: 0.25em 1.5em;
   font-size: 12px;
   cursor: pointer;
   outline: none;
@@ -72,7 +72,7 @@ export const AttendButton = styled.button`
   cursor: pointer;
   outline: none;
   &:hover {
-    color: #1e79b6;
+    color: white;
   };
   
 }
@@ -83,12 +83,12 @@ export const ViewHighButton = styled.button`
   border-radius: 25px;
   color: white;
   padding: 0.25em 1em;
-  font-size: 16px;
-  margin:10px;
+  font-size: 12px;
+  margin:5px;
   cursor: pointer;
   outline: none;
   &:hover {
-    color: #1e79b6;
+    color: white;
   };
 
 }
@@ -208,11 +208,21 @@ export const BoxText = styled.p`
 `;
 export const NavContainer = styled.div`
 background:#232323;
+padding: 2em 0.50em;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: flex-start;
+`;
+export const Summary = styled.div`
+color:white;
 padding: 5em 1em;
 `;
-export const Table = styled.table`
-border-collapse: separate;
-
+export const Table = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding: 0.10em 0.25em;
 `;
 
 export const TableRow = styled.tr`
@@ -240,15 +250,47 @@ font-size: 1rem;
 @media (min-width: 1024px) {
   font-size: .8rem;
   margin: 5px
+  padding: 20px;
+
 }
 `;
 export const Form = styled.form`
 display:flex;
+background:white;
 flex-direction:row;
-
+border: none;
+border-radius: 25px;
 border:1px solid grey;
 
-padding:2px;
+padding:5px;
 `;
+export const Input = styled.input`
+padding: 0.50em 1em;
+border: none;
+border-radius: 25px;
+color:black;
+&:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px white;
+}
+`;
+export const FormButton = styled.button`
+border:1px solid blue;
+background:#232323;
+color:white;
+border: none;
+border-radius: 25px;
+padding: 0.50em 1.5em;
+cursor: pointer;
+&:hover {
+  color: white;
+};
+`;
+export const Span = styled.span`
+padding-right: 0.5em;
+float: right;
+
+`;
+
 
 
