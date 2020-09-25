@@ -108,8 +108,8 @@ export const ViewHighButton = styled.button`
 }
 `;
 export const BodyContainer = styled.div`
-background: #1e79b6;
-padding: 1.5em 1em;
+background:#006994;
+padding: 3em 2em;
 
 `;
 export const BodyTitle = styled.h3`
@@ -128,7 +128,11 @@ export const Conferences = styled.div`
 color:white;
 position:relative;
 top:0;
-border-bottom: 1px solid grey;
+border-bottom-style: solid;
+border-bottom-width: thin;
+border-bottom-color: white;
+
+
 `;
 export const BodyText = styled.p`
 color: white;
@@ -244,6 +248,11 @@ justify-content: flex-end;
 padding: 0.10em 0.25em;
 line-height: 4;
 `;
+export const Horizontal = styled.div`
+border-bottom-style: solid;
+border-bottom-width: thin;
+border-bottom-color: white;
+ `;
 
 export const TableRow = styled.tr`
   padding: 20px;
