@@ -47,7 +47,7 @@ function Nav() {
             <Anchor href="https://www.facebook.com/blackinai/" target="_blank"> 
             <SiFacebook size="2em"/>
             </Anchor>
-            {" "}{" "}
+            &nbsp; &nbsp; &nbsp;
             <Anchor href="https://twitter.com/black_in_ai?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> 
             <IoLogoTwitter size="2em"/>
             </Anchor>
@@ -77,7 +77,7 @@ function Nav() {
             <br />
             <br/>
             <Form>
-              <Input title="Your email address"/>
+              <Input placeholder="Your email address"/>
               <FormButton>SUBSCRIBE</FormButton>
             </Form>
           </NavText>

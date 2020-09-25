@@ -302,7 +302,7 @@ padding: 0.50em 1em;
 border: none;
 type:text,
 border-radius: 25px;
-text-color:black;
+color:black;
 &:focus {
   outline: none;
   box-shadow: 0px 0px 2px white;
