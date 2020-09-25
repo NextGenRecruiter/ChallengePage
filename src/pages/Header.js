@@ -30,7 +30,7 @@ function Header() {
     <HeaderButtonTitle onClick={programs}>PROGRAMS</HeaderButtonTitle>
     <HeaderButtonTitle onClick={About}>ABOUT</HeaderButtonTitle>
     {open ? <HeaderContent><HeaderText><BoxTitle>{AboutTitle}</BoxTitle><br/>It has been placed here solely to demonstrate the look and feel<br/> of finished, typeset text and its only for show so she who <br/>searches for meaning here will be solely disappointed.</HeaderText></HeaderContent>: null}
-    {open == false ? <HeaderContent><HeaderText><BoxTitle>{ProgramTitle}</BoxTitle><br/>It has been placed here solely to demonstrate the look and feel<br/> of finished, typeset text and its only for show so she who <br/>searches for meaning here will be solely disappointed.</HeaderText><HeaderContentImage src={gathering} alt="Logo of Black in AI"/></HeaderContent>: null}
+    {open === false ? <HeaderContent><HeaderText><BoxTitle>{ProgramTitle}</BoxTitle><br/>It has been placed here solely to demonstrate the look and feel<br/> of finished, typeset text and its only for show so she who <br/>searches for meaning here will be solely disappointed.</HeaderText><HeaderContentImage src={gathering} alt="Logo of Black in AI"/></HeaderContent>: null}
 
     </>
   );
