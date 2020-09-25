@@ -1,52 +1,37 @@
-import React from "react";
-import {Head, HeaderButtonTitle, LogoImage, LogoText, HeaderButton} from "./HomeStyle";
+import React, { useState } from 'react'
+import {BoxTitle, Head, HeaderButtonTitle, HeaderContentImage, HeaderContent, HeaderText, LogoImage, HeaderButton} from "./HomeStyle";
 import Logo from '../images/BAI_Logo.png';
+import gathering from '../images/gathering.png'
 
+const ProgramTitle = "An intro sentence about programs.";
+const AboutTitle = "An intro sentence about ABOUT programs.";
+// const memberShipTitle = "An intro sentence about Membership.";
 
-const programs =
-  "It has been placed here solely to demonstrate the look and fell of finished, typeset text and its only for show so she who searches for meaning here will be solely disappointed";
-const about =
-"coming soon...";
-const membership =
-"coming soon...";
-const Partnership =
-"coming soon...";
-
-const header=[
-    {
-    id:1,
-    title: "ABOUT",
-    text:about,
-    },
-    {
-    id:2,
-    title: "PROGRAMS",
-    text: programs,
-    },
-    {
-    id:3,
-    title: "MEMBERSHIP",
-    text: membership,
-    },
-    {
-    id:4,
-    title:"PARTNERSHIP",
-    text:Partnership
-    }
-];
 function Header() {
+  const [ open, setOpen ] = useState(false);
+
+  function About() {
+    setOpen(true);
+  }
+  function programs() {
+    setOpen(true);
+  }
+  // function MemberShip() {
+  //   setOpen(true);
+  // }
   
+
   return (
     <>
     <LogoImage src={Logo} alt="Logo of Black in AI"/>
-      <LogoText>BLACK IN AI</LogoText>
-    <Head>
     <HeaderButton>DONATE</HeaderButton>
     <HeaderButtonTitle>PARTNERSHIP</HeaderButtonTitle>
     <HeaderButtonTitle>MEMBERSHIP</HeaderButtonTitle>
-    <HeaderButtonTitle>PROGRAMS</HeaderButtonTitle>
-    <HeaderButtonTitle>ABOUT</HeaderButtonTitle>
-    </Head>
+    <HeaderButtonTitle onClick={programs}>PROGRAMS</HeaderButtonTitle>
+    <HeaderButtonTitle onClick={About}>ABOUT</HeaderButtonTitle>
+    {open ? <HeaderContent><HeaderText><BoxTitle>{AboutTitle}</BoxTitle><br/>It has been placed here solely to demonstrate the look and feel<br/> of finished, typeset text and its only for show so she who <br/>searches for meaning here will be solely disappointed.</HeaderText></HeaderContent>: null}
+    {open == false ? <HeaderContent><HeaderText><BoxTitle>{ProgramTitle}</BoxTitle><br/>It has been placed here solely to demonstrate the look and feel<br/> of finished, typeset text and its only for show so she who <br/>searches for meaning here will be solely disappointed.</HeaderText><HeaderContentImage src={gathering} alt="Logo of Black in AI"/></HeaderContent>: null}
+
     </>
   );
 }

@@ -3,13 +3,15 @@ import {
   NavContainer,
   NavTitle,
   NavText,
-  HeaderButton,
+  NavButton,
   Summary,
   Form,
   Input,
   FormButton,
+  Anchor
 } from "./HomeStyle";
-
+import {SiFacebook} from 'react-icons/si'
+import {IoLogoTwitter} from 'react-icons/io'
 
 
 function Nav() {
@@ -18,14 +20,13 @@ function Nav() {
       <NavContainer>
         <Summary>
           <NavTitle>BLACK IN AI</NavTitle>
-          <br />
           <NavText>
             Short sentence stating the nature of the <br />
             organization e.g tax-exempt, non-profit and <br />
             possibly registration number.
           </NavText>
           <br/>
-          <HeaderButton>DONATE</HeaderButton>
+          <NavButton>DONATE</NavButton>
           <br/>
           <br/>
           <br/>
@@ -34,7 +35,6 @@ function Nav() {
         </Summary>
         <Summary>
           <NavTitle>CONTACT US</NavTitle>
-          <br />
           <NavText>
             Physical address, if available
             <br />
@@ -43,26 +43,33 @@ function Nav() {
             <br />
             abc@blackinai.org
             <br />
+            <br />
+            <Anchor href="https://www.facebook.com/blackinai/" target="_blank"> 
+            <SiFacebook size="2em"/>
+            </Anchor>
+            {" "}{" "}
+            <Anchor href="https://twitter.com/black_in_ai?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> 
+            <IoLogoTwitter size="2em"/>
+            </Anchor>
           </NavText>
         </Summary>
         <Summary>
           <NavTitle>LINKS</NavTitle>
           <NavText>
             About us
-            <br />
-            <br />
+            <br/>
+            <br/>
             Programs
-            <br />
-            <br />
+            <br/>
+            <br/>
             Membership
-            <br />
-            <br />
+            <br/>
+            <br/>
             Partnership
           </NavText>
         </Summary>
         <Summary>
           <NavTitle>GET UPDATES</NavTitle>
-          <br/>
           <NavText>
             Sign up for our newsletter to get
             <br />

@@ -2,20 +2,18 @@ import styled from "styled-components";
 import px2vw from "../utils/px2vw";
 
 export const Head = styled.div`
-margin: 0.25em; 
-display: flex;
-flex-direction: row-reverse;
+
 `;
 export const LogoImage = styled.img`
 @media (min-width: 768px) {
   width: ${px2vw(20, 768)};
   min-height: ${px2vw(10, 68)};
-  height: 20%;
+  height: 10%;
 }
 
 @media (min-width: 1024px) {
-  width: ${px2vw(70)};
-  min-height: ${px2vw(70)};
+  width: ${px2vw(200)};
+  min-height: ${px2vw(80)};
 }
 
 `;
@@ -24,16 +22,19 @@ color: #333;
 font-size: 1rem;
 @media (min-width: 1024px) {
   font-size: .9rem;
-  margin: 5px
+  margin: 10px
   padding-right:50px;
+  position:bottom;
 }
 `;
 export const HeaderButtonTitle = styled.button`
 border: none;
 color: black;
 padding: 0.50em 1em;
-font-size: 16px;
+font-size: 13px;
 cursor: pointer;
+float:right;
+margin:5px;
 background-color: inherit;
 outline: none;
 &:hover {
@@ -43,26 +44,39 @@ outline: none;
 export const HeaderText = styled.p`
   margin-top: ${px2vw(20)};
   color: #666;
-  font-size: .5rem;
-
+  font-size: 0.6rem;
   @media (min-width: 1024px) {
-    font-size: 1rem;
-    margin: 5px
+    font-size: 1.25rem;
+    line-height: 1.8;
+
   }
 `;
+export const HeaderContent = styled.div`
+display: flex;
+justify-content: space-evenly;
+padding:4em;
+
+ `;
+ export const HeaderContentImage = styled.img`
+float:right;
+ `;
+
 export const HeaderButton = styled.button`
   background: orange;
   border: none;
   border-radius: 25px;
   color: white;
-  padding: 0.25em 1.5em;
-  font-size: 12px;
+  padding: 0.50em 1.5em;
+  font-size: 10px;
   cursor: pointer;
   outline: none;
+  float:right;
+  margin:5px;
+
 }
 `;
 export const AttendButton = styled.button`
-  background: black;
+  background: #232323;
   border: none;
   border-radius: 25px;
   color: white;
@@ -95,7 +109,7 @@ export const ViewHighButton = styled.button`
 `;
 export const BodyContainer = styled.div`
 background: #1e79b6;
-padding: 5em 1em;
+padding: 1.5em 1em;
 
 `;
 export const BodyTitle = styled.h3`
@@ -105,13 +119,15 @@ text-align:center;
 `;
 export const BodyTextContainer = styled.div`
 column-count: 2;
-column-gap: 8em;
+column-gap: 6em;
+
 ;
 
 `;
 export const Conferences = styled.div`
 color:white;
-
+position:relative;
+top:0;
 `;
 export const BodyText = styled.p`
 color: white;
@@ -120,9 +136,10 @@ margin-top: ${px2vw(20)};
 font-size: 1.5rem;
 word-wrap: break-word;
 
-
 @media (min-width: 1024px) {
   font-size: 1rem;
+  line-height: 1.8;
+
 }
 `;
 export const SponsorButton = styled.button`
@@ -217,12 +234,15 @@ align-items: flex-start;
 export const Summary = styled.div`
 color:white;
 padding: 5em 1em;
+margin-top:0px;
 `;
 export const Table = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
 padding: 0.10em 0.25em;
+line-height: 4;
+
 `;
 
 export const TableRow = styled.tr`
@@ -251,6 +271,19 @@ font-size: 1rem;
   font-size: .8rem;
   margin: 5px
   padding: 20px;
+  line-height: 1.8;
+}
+`;
+export const NavButton = styled.button`
+  background: orange;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 0.50em 1.5em;
+  font-size: 10px;
+  cursor: pointer;
+  outline: none;
+  margin:5px;
 
 }
 `;
@@ -267,8 +300,9 @@ padding:5px;
 export const Input = styled.input`
 padding: 0.50em 1em;
 border: none;
+type:text,
 border-radius: 25px;
-color:black;
+text-color:black;
 &:focus {
   outline: none;
   box-shadow: 0px 0px 2px white;
@@ -280,10 +314,14 @@ background:#232323;
 color:white;
 border: none;
 border-radius: 25px;
-padding: 0.50em 1.5em;
+padding: 0.25em 1.5em;
 cursor: pointer;
 &:hover {
   color: white;
+}
+&:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px white;
 };
 `;
 export const Span = styled.span`
@@ -291,6 +329,15 @@ padding-right: 0.5em;
 float: right;
 
 `;
+export const HeaderImage = styled.div`
+margin: 0.25em; 
+display: flex;
+padding:5px;
+`;
+export const Anchor = styled.a`
+color: inherit; 
+ `;
+
 
 
 
