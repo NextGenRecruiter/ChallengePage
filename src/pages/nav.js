@@ -1,5 +1,5 @@
 import React from "react";
-import {NavContainer, NavTitle, NavText, HeaderButton, Table, TableRow} from "./HomeStyle";
+import {NavContainer, NavTitle, NavText, HeaderButton, Table, TableRow, Form} from "./HomeStyle";
 
 function Nav() {
   return (
@@ -17,7 +17,10 @@ function Nav() {
 </td>
     <td><NavText>Physical address, if available<br/>will go right here.<br/><br/>abc@blackinai.org<br/></NavText></td>
     <td><NavText>About us<br/><br/>Programs<br/><br/>Membership<br/><br/>Partnership</NavText></td>
-    <td><NavText>Sign up for our newsletter to get<br/>updates on our work</NavText></td>
+    <td><NavText>Sign up for our newsletter to get<br/>updates on our work<br/><Form>
+  <input />
+  <button>Go</button>
+</Form></NavText></td>
   </tr>
 </Table>
   <br/>

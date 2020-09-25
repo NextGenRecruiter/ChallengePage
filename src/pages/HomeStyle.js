@@ -57,6 +57,8 @@ export const HeaderButton = styled.button`
   color: white;
   padding: 1em 1.5em;
   font-size: 12px;
+  cursor: pointer;
+  outline: none;
 }
 `;
 export const AttendButton = styled.button`
@@ -67,6 +69,12 @@ export const AttendButton = styled.button`
   padding: 0.80em 2em;
   font-size: 10px;
   margin:5px;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    color: #1e79b6;
+  };
+  
 }
 `;
 export const ViewHighButton = styled.button`
@@ -74,15 +82,20 @@ export const ViewHighButton = styled.button`
   border: .1rem solid;
   border-radius: 25px;
   color: white;
-  padding: 0.50em 2em;
+  padding: 0.25em 1em;
   font-size: 16px;
   margin:10px;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    color: #1e79b6;
+  };
 
 }
 `;
 export const BodyContainer = styled.div`
 background: #1e79b6;
-padding: 6em 1em;
+padding: 5em 1em;
 
 `;
 export const BodyTitle = styled.h3`
@@ -97,10 +110,7 @@ column-gap: 8em;
 
 `;
 export const Conferences = styled.div`
-grid-row: 1 / 1;
 color:white;
-text-decoration: underline;
-padding: 0.80em 1em;
 
 `;
 export const BodyText = styled.p`
@@ -123,6 +133,11 @@ export const SponsorButton = styled.button`
   padding: 0.80em 1em;
   font-size: 10px;
   margin:10px;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    color: #1e79b6;
+  };
 }
 `;
 export const Container = styled.div`
@@ -197,12 +212,18 @@ padding: 5em 1em;
 `;
 export const Table = styled.table`
 border-collapse: separate;
-  padding: 10px;
-`;
-export const TableRow = styled.tr`
-  padding: 20px;
+
 `;
 
+export const TableRow = styled.tr`
+  padding: 20px;
+
+`;
+export const TableData = styled.td`
+  padding: 20px;
+  border-bottom: .5px solid #ddd;
+  position:right;
+`;
 export const NavTitle = styled.h4`
 color: white;
 font-size: 1rem;
@@ -221,3 +242,13 @@ font-size: 1rem;
   margin: 5px
 }
 `;
+export const Form = styled.form`
+display:flex;
+flex-direction:row;
+
+border:1px solid grey;
+
+padding:2px;
+`;
+
+
