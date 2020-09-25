@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {BoxTitle, Head, HeaderButtonTitle, HeaderContentImage, HeaderContent, HeaderText, LogoImage, HeaderButton} from "./HomeStyle";
+import {BoxTitle, HeaderButtonTitle, HeaderContentImage, HeaderContent, HeaderText, LogoImage, HeaderButton} from "./HomeStyle";
 import Logo from '../images/BAI_Logo.png';
 import gathering from '../images/gathering.png'
 
