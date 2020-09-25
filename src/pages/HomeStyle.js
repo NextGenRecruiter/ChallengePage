@@ -128,6 +128,7 @@ export const Conferences = styled.div`
 color:white;
 position:relative;
 top:0;
+border-bottom: 1px solid grey;
 `;
 export const BodyText = styled.p`
 color: white;
@@ -233,7 +234,7 @@ align-items: flex-start;
 `;
 export const Summary = styled.div`
 color:white;
-padding: 5em 1em;
+padding: 1em 1em;
 margin-top:0px;
 `;
 export const Table = styled.div`
@@ -242,7 +243,6 @@ flex-direction: column;
 justify-content: flex-end;
 padding: 0.10em 0.25em;
 line-height: 4;
-
 `;
 
 export const TableRow = styled.tr`
