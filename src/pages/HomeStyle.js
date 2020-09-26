@@ -226,6 +226,8 @@ export const BoxText = styled.p`
 
   @media (min-width: 1024px) {
     font-size: 1rem;
+    line-height: 1.8;
+
   }
 `;
 export const NavContainer = styled.div`
