@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import px2vw from "../utils/px2vw";
 
-export const Head = styled.div`
-
-`;
 export const LogoImage = styled.img`
 @media (min-width: 768px) {
   width: ${px2vw(20, 768)};
@@ -71,7 +68,7 @@ export const HeaderButton = styled.button`
   cursor: pointer;
   outline: none;
   float:right;
-  margin:5px;
+  margin:10px;
 
 }
 `;
