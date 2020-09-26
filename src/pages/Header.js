@@ -11,10 +11,10 @@ function Header() {
   const [ open, setOpen ] = useState(false);
 
   function About() {
-    setOpen(true);
+    setOpen(!true);
   }
   function programs() {
-    setOpen(true);
+    setOpen(!true);
   }
   // function MemberShip() {
   //   setOpen(true);
